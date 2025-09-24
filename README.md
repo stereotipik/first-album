@@ -1,4 +1,4 @@
-# First Album - Premier Album
+# First Album
 
 This repository contains the lyrics for the songs from Stereotipik's first album.
 
