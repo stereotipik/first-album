@@ -5,13 +5,8 @@
     "preview": "deno run -A --node-modules-dir npm:vite preview",
     "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
   },
-  "compilerOptions": {
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
-    "jsxImportSourceTypes": "@types/react"
-  },
   "imports": {
+    "@/": "./src/",
     "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.5",
     "@types/react": "npm:@types/react@^19.1.13",
     "@types/react-dom": "npm:@types/react-dom@^19.1.9",
@@ -19,5 +14,16 @@
     "react": "npm:react@^19.1.1",
     "react-dom": "npm:react-dom@^19.1.1",
     "vite": "npm:vite@^7.1.5"
-  }
+  },
+  "compilerOptions": {
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "jsxImportSourceTypes": "@types/react"
+  },
+  "nodeModulesDir": "auto"
 }
